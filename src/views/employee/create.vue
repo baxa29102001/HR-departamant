@@ -1,14 +1,16 @@
 <template>
   <div>
-    <craete-edit-form v-model="form" @submit="submitHandler"></craete-edit-form>
+    <craete-edit-form
+      v-model="form"
+      @submit="submitHandler"
+      @edit="submitHandler"
+    ></craete-edit-form>
   </div>
 </template>
 
 <script>
-import formMixin from './formMixin'
+import formMixin from './formMixin';
 export default {
- 
-
-  mixins:[formMixin]
-}
+  mixins: [formMixin],
+};
 </script>
